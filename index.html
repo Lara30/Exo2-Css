@@ -2,15 +2,32 @@
 <html>
     <head>
         <meta charset="utf-8">
-         <link type="text/css" rel="stylesheet" href="style.css"/>
+        <!-- <link href="./bootstrap-3.3.7-dist/css/bootstrap-theme.css"> -->
+
+        <link href="./bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
+        <link href="./bootstrap-3.3.7-dist/fonts" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="style.css"/>
         <title>Maquette-2</title>
     </head>
 
     <body>
+      <script src="jquery-3.2.1.js"></script>
+      <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+
 <main>
   <header>
     <img id="logo" src="./img/logo.png"/>
-   <nav>Services Portfolio Testimonials Team Contact Archives</nav>
+    <nav class="entete">
+         <ul class="nav nav-pills">
+          <li><a>Services</a></li>
+          <li><a>Portfolio</a></li>
+          <li><a>Testimonials</a></li>
+          <li><a>Team</a></li>
+          <li><a>Contact</a></li>
+          <li><a>Archives</a></li>
+        </ul>
+      </nav>
+
 
       <div class="intro"><h1>A Flexible one page portfolio theme, <br>
       for a full on user experience.</h1></div>
@@ -21,7 +38,6 @@
   <section1>
     <article1>
       <h1>Fine Features</h1>
-
       <div class="imggroupe1">
         <div class="imgicon">
           <img class="img" src="./img/icon1.png"/>
@@ -136,6 +152,7 @@
     <label for="message"><p>Enter your message here</p></label><br><br/>
     <textarea id="message" name="message"></textarea>
     <input type="submit" value="Send Message">
+
 <!-- pour des chiffres ce sera au niveau du input type= qu'il
 faut changer comme la date afin que cela affiche la date, et suivre après avec
 l'id et le name pour que cela renvoie au fichier php -->
